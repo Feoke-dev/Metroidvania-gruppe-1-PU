@@ -18,6 +18,7 @@ public class MenuController : MonoBehaviour
     //[SerializeField] GameObject closedMenuUnSelected;
 
     [SerializeField] Image[] stars;
+
     
 
     public bool pausedGame;
@@ -47,7 +48,26 @@ public class MenuController : MonoBehaviour
             PauseGame();
         }
     }
-
+    public void levelpicking() 
+    {
+        SceneManager.LoadScene("LevelPicking");
+    }
+    public void loadlevel1()
+    {
+        SceneManager.LoadScene("olivar");
+    }
+    public void loadlevel2()
+    {
+        SceneManager.LoadScene("faith");
+    }
+    public void loadlevel3()
+    {
+        SceneManager.LoadScene("Phillip");
+    }
+    public void loadlevel4()
+    {
+        SceneManager.LoadScene("Valdemar");
+    }
     public void LoadLevel(int buildIndex)
     {
         SceneManager.LoadScene(buildIndex);
@@ -120,9 +140,6 @@ public class MenuController : MonoBehaviour
     }
     public void QuitGame()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
-        Application.Quit();
+        SceneManager.LoadScene("LevelPicking");
     }
 }

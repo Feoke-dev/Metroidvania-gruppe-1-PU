@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IHealth
 {
+    public static bool dead = false;
     public int maxHP = 100;
     private int hp = 100;
     float damageDelay = 0.25f;
@@ -30,6 +31,10 @@ public class PlayerHealth : MonoBehaviour, IHealth
         }
         canTakeDamage = true;
         GetComponent<PlayerRespawn>()?.RewpawnPlayer();
+
+        // Resume timer on respawn (if ScoreSystem exists)
+        if (ScoreSystem.instance != null)
+            ScoreSystem.instance.StartTimer();
     }
     public void TakeDamage(int dmg)
     {
@@ -46,7 +51,13 @@ public class PlayerHealth : MonoBehaviour, IHealth
             {
                 anim.SetBool("Died", true);
                 GetComponent<PlatformControllerAdv>()?.SetPlayerDead(true);
+                ScoreSystem.instance.StopTimer();
+
             }
+
+
+                
+
             if (HealthVisualizer.Instance.LoseLife() && canTakeDamage) {
                 Invoke("InitiatePlayerHealth", deathAmimDuration);
             }

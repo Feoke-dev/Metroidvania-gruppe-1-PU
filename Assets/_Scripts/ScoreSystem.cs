@@ -10,6 +10,7 @@ public class ScoreSystem : MonoBehaviour
 
     // Elapsed time in seconds (fractional)
     private float elapsedTime = 0f;
+    private bool timerRunning = false;
 
     // Assign these in the Inspector (or leave one null to auto-find on the same GameObject)
     public TMP_Text scoreText;
@@ -39,6 +40,7 @@ public class ScoreSystem : MonoBehaviour
 
         totalPoints = GameObject.FindGameObjectsWithTag("Point").Length;
         elapsedTime = 0f;
+        StartTimer();
         UpdateTimerText();
     }
 
@@ -68,8 +70,22 @@ public class ScoreSystem : MonoBehaviour
         UpdateTimerText();
     }
 
+    public void StartTimer()
+    {
+        timerRunning = true;
+    }
+
+    public void StopTimer()
+    {
+        timerRunning = false;
+    }
+
+    public bool IsTimerRunning() => timerRunning;
+
     void Update()
     {
+        if (!timerRunning) return;
+
         // Advance timer each frame
         elapsedTime += Time.deltaTime;
         UpdateTimerText();
