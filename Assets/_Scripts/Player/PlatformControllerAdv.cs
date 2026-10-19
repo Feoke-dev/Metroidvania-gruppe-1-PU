@@ -53,6 +53,7 @@ public class PlatformControllerAdv : MonoBehaviour
 
 
     [InspectorLabel("Dashing")]
+    public bool dashUnlocked = false;
     bool canDash = true;
     [SerializeField] bool isDashing = false;
     [SerializeField] float dashingPower = 24f;

@@ -16,7 +16,7 @@ public class PlayerRespawn : MonoBehaviour
         spawnPoint = point;
     }
 
-    public void RewpawnPlayer()
+    public void RespawnPlayer()
     {
         transform.position = spawnPoint;
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;

@@ -6,11 +6,11 @@ public class PlayerHealth : MonoBehaviour, IHealth
     public static bool dead = false;
     public int maxHP = 100;
     private int hp = 100;
-    float damageDelay = 0.25f;
+    float damageDelay = 0.05f;
     bool canTakeDamage = true;
     bool useAnim;
     Animator anim;
-    [SerializeField] float deathAmimDuration = 1.2f;
+    [SerializeField] float deathAnimDuration = 1.2f;
     private void Start()
     {
         TryGetComponent<Animator>(out anim);
@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour, IHealth
             GetComponent<PlatformControllerAdv>()?.SetPlayerDead(false);
         }
         canTakeDamage = true;
-        GetComponent<PlayerRespawn>()?.RewpawnPlayer();
+        GetComponent<PlayerRespawn>()?.RespawnPlayer();
 
         // Resume timer on respawn (if ScoreSystem exists)
         if (ScoreSystem.instance != null)
@@ -59,7 +59,7 @@ public class PlayerHealth : MonoBehaviour, IHealth
                 
 
             if (HealthVisualizer.Instance.LoseLife() && canTakeDamage) {
-                Invoke("InitiatePlayerHealth", deathAmimDuration);
+                Invoke("InitiatePlayerHealth", deathAnimDuration);
             }
             canTakeDamage = false;
         }

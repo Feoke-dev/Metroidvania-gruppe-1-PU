@@ -45,19 +45,19 @@ public class HealthVisualizer : MonoBehaviour
                 deathAnimator.color = new Color(0,0,0,1);
             }
         }
-        if (livesLeft <= 0)
-        {
-            StartCoroutine(LoseGameDelay(loseGameDelay));
-            return false;
-        }
+        //if (livesLeft <= 0)
+        //{
+        //    StartCoroutine(LoseGameDelay(loseGameDelay));
+        //    return false;
+        //}
         return true;
     }
 
-    IEnumerator LoseGameDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        MenuController.Instance.LoseGame();
-    }
+    //IEnumerator LoseGameDelay(float delay)
+    //{
+    //    yield return new WaitForSeconds(delay);
+    //    MenuController.Instance.LoseGame();
+    //}
     private void FixedUpdate()
     {
         if(deathAnimator != null && deathAnimator.color.a > 0)
