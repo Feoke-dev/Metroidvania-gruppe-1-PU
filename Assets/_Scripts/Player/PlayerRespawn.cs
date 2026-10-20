@@ -14,26 +14,28 @@ public class PlayerRespawn : MonoBehaviour
             spawnPoint = startPoint.position;
         }
     }
+
     public void SetPlayerRespawn(Vector3 point)
     {
         spawnPoint = point;
     }
 
-<<<<<<< Updated upstream
-    public void RespawnPlayer()
-=======
     public Vector3 GetPlayerRespawn()
     {
         return spawnPoint;
     }
 
-    public void RewpawnPlayer()
->>>>>>> Stashed changes
+    public void RespawnPlayer()
     {
         transform.position = spawnPoint;
         if (playerRigidbody != null)
         {
             playerRigidbody.linearVelocity = Vector2.zero;
         }
+    }
+
+    public void RewpawnPlayer()
+    {
+        RespawnPlayer();
     }
 }

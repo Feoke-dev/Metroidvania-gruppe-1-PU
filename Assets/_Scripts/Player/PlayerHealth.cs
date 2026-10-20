@@ -56,16 +56,8 @@ public class PlayerHealth : MonoBehaviour, IHealth
             }
 
 
-                
-
-<<<<<<< Updated upstream
-            if (HealthVisualizer.Instance.LoseLife() && canTakeDamage) {
-                Invoke("InitiatePlayerHealth", deathAnimDuration);
-            }
-=======
             HealthVisualizer.Instance?.LoseLife();
-            Invoke("InitiatePlayerHealth", deathAmimDuration);
->>>>>>> Stashed changes
+            Invoke("InitiatePlayerHealth", deathAnimDuration);
             canTakeDamage = false;
         }
     }
