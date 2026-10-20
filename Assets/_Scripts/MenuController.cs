@@ -50,7 +50,17 @@ public class MenuController : MonoBehaviour
     }
     public void levelpicking() 
     {
-        SceneManager.LoadScene("LevelPicking");
+        var active = SceneManager.GetActiveScene();
+        // If we're already in a level (not the LevelPicking scene) reload the current level.
+        // Otherwise go to the level picking scene.
+        if (active.name == "LevelPicking")
+        {
+            SceneManager.LoadScene("LevelPicking");
+        }
+        else
+        {
+            SceneManager.LoadScene(active.buildIndex);
+        }
     }
     public void loadlevel1()
     {

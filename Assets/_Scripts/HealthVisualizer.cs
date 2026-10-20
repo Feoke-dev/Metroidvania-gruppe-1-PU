@@ -9,8 +9,7 @@ public class HealthVisualizer : MonoBehaviour
     [SerializeField] List<Image> hpIconList;
     [SerializeField] Image healthIcon;
     int livesLeft;
-    public int maxLives = 3;
-    [SerializeField] float loseGameDelay = 1.2f;
+    public int maxLives = 1;
     [SerializeField] Image deathAnimator;
     [SerializeField] float deathAnimationSpeedinSec = 0.25f;
     private void Start()
@@ -45,6 +44,7 @@ public class HealthVisualizer : MonoBehaviour
                 deathAnimator.color = new Color(0,0,0,1);
             }
         }
+<<<<<<< Updated upstream
         //if (livesLeft <= 0)
         //{
         //    StartCoroutine(LoseGameDelay(loseGameDelay));
@@ -58,6 +58,11 @@ public class HealthVisualizer : MonoBehaviour
     //    yield return new WaitForSeconds(delay);
     //    MenuController.Instance.LoseGame();
     //}
+=======
+        return true;
+    }
+
+>>>>>>> Stashed changes
     private void FixedUpdate()
     {
         if(deathAnimator != null && deathAnimator.color.a > 0)
