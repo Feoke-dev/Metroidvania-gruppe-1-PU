@@ -7,5 +7,6 @@ public class UnlockWalls : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         barrier.SetActive(false);
+        Debug.Log("Barriers are gone...");
     }
 }

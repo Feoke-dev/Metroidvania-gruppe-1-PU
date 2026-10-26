@@ -107,7 +107,7 @@ public class PlatformControllerAdv : MonoBehaviour
     }
     public void Dash(InputAction.CallbackContext context)
     {
-        if (context.performed && canDash)
+        if (context.performed && canDash && dashUnlocked == true)
         {
             StartCoroutine(Dash());
         }
@@ -277,6 +277,12 @@ public class PlatformControllerAdv : MonoBehaviour
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
+
+    public void UnlockDash()
+    {
+        dashUnlocked = true;
+    }
+
     //----- Character direction -----\\
     void CheckDirection()
     {
