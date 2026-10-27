@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: bf0822ed9a8214fd796df6f644f8e867
+guid: f41afbd2356ea8646a3eec431281d4cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 507728693504204746
-    second: IMG_0678_0
+      213: -8722561404527402251
+    second: WalkCycle6_0
+  - first:
+      213: -7065097480164493588
+    second: WalkCycle6_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0678_0
+      name: WalkCycle6_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 84
-        width: 505
-        height: 668
+        y: 101
+        width: 497
+        height: 634
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acf57928e80db0700800000000000000
-      internalID: 507728693504204746
+      spriteID: 5f2ac9fdd9c33f680800000000000000
+      internalID: -8722561404527402251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkCycle6_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 84
+        width: 304
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6b947364bb3fd90800000000000000
+      internalID: -7065097480164493588
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0678_0: 507728693504204746
+      WalkCycle6_0: -8722561404527402251
+      WalkCycle6_1: -7065097480164493588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

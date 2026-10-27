@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 54c28782229f848fea8441b85a5285e2
+guid: e2708d8a1846c274abdb83e8bd336979
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6036264432846467138
-    second: IMG_0677_0
+      213: 4972437028855979256
+    second: WalkCycle2_0
   - first:
-      213: -2907973019708775843
-    second: IMG_0677_1
+      213: 8406382760038152726
+    second: WalkCycle2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0677_0
+      name: WalkCycle2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 101
-        width: 497
-        height: 634
+        x: 21
+        y: 110
+        width: 491
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 240732a258e15c350800000000000000
-      internalID: 6036264432846467138
+      spriteID: 8fc95f4f125a10540800000000000000
+      internalID: 4972437028855979256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_0677_1
+      name: WalkCycle2_1
       rect:
         serializedVersion: 2
         x: 201
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d52a6d712fdc4a7d0800000000000000
-      internalID: -2907973019708775843
+      spriteID: 61aba02d49879a470800000000000000
+      internalID: 8406382760038152726
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0677_0: 6036264432846467138
-      IMG_0677_1: -2907973019708775843
+      WalkCycle2_0: 4972437028855979256
+      WalkCycle2_1: 8406382760038152726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
