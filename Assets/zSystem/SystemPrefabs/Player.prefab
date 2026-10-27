@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 3025700541956641344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.004000351, y: -1.4860002, z: 0}
+  m_LocalPosition: {x: -0.004000351, y: -1.3740002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4954,7 +4954,7 @@ Transform:
   m_GameObject: {fileID: 4909005910461863424}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.002, y: -1.441, z: 0}
+  m_LocalPosition: {x: -0.002, y: -1.329, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4978,6 +4978,7 @@ GameObject:
   - component: {fileID: 49985989272073237}
   - component: {fileID: 3538544560284178858}
   - component: {fileID: 1292932109541853746}
+  - component: {fileID: 250338698834523510}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5187,9 +5188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2d93600a1349b49aef5b1ad2c164ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6.5
+  speed: 7
   groundCheck: {fileID: 3041250214348639834}
-  groundCheckRadius: 0.2
+  groundCheckRadius: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 72
@@ -5210,7 +5211,7 @@ MonoBehaviour:
   wallJumpingPower: {x: 4, y: 8}
   dashUnlocked: 0
   isDashing: 0
-  dashingPower: 48
+  dashingPower: 28
   dashingTime: 0.2
   dashingCooldown: 1
   trail: {fileID: 1292932109541853746}
@@ -5253,7 +5254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 0303a9d7203ed204dbff4c90d10a53e2, type: 3}
+  m_Actions: {fileID: 0}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -5454,6 +5455,28 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 0
   m_ApplyActiveColorSpace: 1
+--- !u!95 &250338698834523510
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5973556345691649676}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b345f25aeede4874991f08fbd54780a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6290534733684988861
 GameObject:
   m_ObjectHideFlags: 0

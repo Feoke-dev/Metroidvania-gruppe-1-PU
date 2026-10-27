@@ -339,22 +339,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5351424220340245228}
     m_Modifications:
-    - target: {fileID: 2817847325891337695, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
-      propertyPath: speed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817847325891337695, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
-      propertyPath: dashingPower
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817847325891337695, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
-      propertyPath: groundCheckRadius
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3041250214348639834, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.3740002
-      objectReference: {fileID: 0}
     - target: {fileID: 3538544560284178858, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
       propertyPath: m_Camera
       value: 
@@ -366,10 +350,6 @@ PrefabInstance:
     - target: {fileID: 5973556345691649676, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6602187924865592898, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.329
       objectReference: {fileID: 0}
     - target: {fileID: 7079702888984563262, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
       propertyPath: m_LocalPosition.x

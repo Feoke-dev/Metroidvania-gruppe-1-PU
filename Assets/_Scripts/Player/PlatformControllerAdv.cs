@@ -259,7 +259,7 @@ public class PlatformControllerAdv : MonoBehaviour
     IEnumerator Dash()
     {
         if (useAnim) { 
-            anim.SetBool("IsDashing", true);
+            //anim.SetBool("IsDashing", true);
         }
         canDash = false;
         isDashing = true;
@@ -272,7 +272,7 @@ public class PlatformControllerAdv : MonoBehaviour
         rb.gravityScale = orgGravity;
         isDashing = false;
         if (useAnim) {
-            anim.SetBool("IsDashing", false);
+            //anim.SetBool("IsDashing", false);
         }
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
