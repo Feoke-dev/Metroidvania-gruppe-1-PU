@@ -8,6 +8,7 @@ public class DashUnlockObject : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             player.GetComponent<PlatformControllerAdv>().UnlockDash();
+            this.gameObject.SetActive(false);
             Debug.Log("Dash has been unlocked");
         }
     }

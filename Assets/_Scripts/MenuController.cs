@@ -78,6 +78,10 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Valdemar");
     }
+    public void loadlevelMain()
+    {
+        SceneManager.LoadScene("MainWorld");
+    }
     public void LoadLevel(int buildIndex)
     {
         SceneManager.LoadScene(buildIndex);

@@ -5055,6 +5055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnlockWalls
   barrier: {fileID: 8325824583596424567}
+  button: {fileID: 8781359881538555611}
 --- !u!212 &3506744125230836814
 SpriteRenderer:
   serializedVersion: 2
