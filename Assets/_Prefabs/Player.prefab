@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3370477269135060752}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.31, y: 0.09000015, z: -10}
+  m_LocalPosition: {x: 2.17481, y: -1.28372, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,7 +45,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0}
+  m_BackGroundColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -339,18 +339,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5351424220340245228}
     m_Modifications:
-    - target: {fileID: 2817847325891337695, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
-      propertyPath: dashUnlocked
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3538544560284178858, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5593207187881872513}
-    - target: {fileID: 3538544560284178858, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: 0303a9d7203ed204dbff4c90d10a53e2, type: 3}
     - target: {fileID: 3728007053130708773, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
       propertyPath: startPoint
       value: 
@@ -399,8 +391,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 106626943426704396, guid: 174473a7981d9d449ac446f0dca79628, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
