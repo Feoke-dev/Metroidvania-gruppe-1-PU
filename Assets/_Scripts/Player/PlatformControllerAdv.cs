@@ -99,6 +99,10 @@ public class PlatformControllerAdv : MonoBehaviour
         {
             jump = true;
             //jumpBufferCounter = jumpBufferTime;
+            if (useAnim)
+            {
+                anim.SetTrigger("Jump");
+            }
         }
         if (context.canceled)
         {
@@ -179,6 +183,7 @@ public class PlatformControllerAdv : MonoBehaviour
             jumpBufferCounter -= Time.deltaTime;
         }
         //Jump mechanics
+        //if (jumpBufferCounter > 0f && coyoteTimeLeft > 0f)
         if (jumpBufferCounter > 0f && coyoteTimeLeft > 0f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
