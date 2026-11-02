@@ -66,8 +66,8 @@ public class MenuController : MonoBehaviour
 
     public void loadlevelMain()
     {
-        SceneFadeManager.Instance.LoadScene("MainWorld");
-        Debug.Log("MainWorld button pressed");
+        SceneFadeManager.Instance.LoadScene("Main World");
+        Debug.Log("Main World button pressed");
     }
     public void LoadLevel(int buildIndex)
     {

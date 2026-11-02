@@ -136,6 +136,7 @@ public class PlatformControllerAdv : MonoBehaviour
         WallSlide();
         WallJump();
         PlayerJump();
+        //FallAnim();
     }
 
     //----- Movement -----\\
@@ -213,6 +214,20 @@ public class PlatformControllerAdv : MonoBehaviour
             isJumping = false;
         }
     }
+    //private void FallAnim()
+    //{
+    //    if (useAnim)
+    //    {
+    //        if (isGrounded = false)
+    //        {
+    //            anim.SetBool("IsGrounded", false);
+    //        }
+    //        if (isGrounded = true)
+    //        {
+    //            anim.SetBool("IsGrounded", true);
+    //        }
+    //    }
+    //}
     private void WallJump()
     {
         if (isWallSliding)
