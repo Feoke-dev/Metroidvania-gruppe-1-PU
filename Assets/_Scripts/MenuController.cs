@@ -17,9 +17,8 @@ public class MenuController : MonoBehaviour
     [SerializeField] GameObject startMenuFirstSelected;
     //[SerializeField] GameObject closedMenuUnSelected;
 
+    [SerializeField] Image[] stars;
 
-    [SerializeField] Image[] stars; 
-    [SerializeField] GameObject endMenuFirstSelected;
     
 
     public bool pausedGame;
@@ -28,7 +27,6 @@ public class MenuController : MonoBehaviour
         if(Instance != null)
         {
             Destroy(gameObject);
-            return;
         }
         Instance = this;
         if(loseMenu != null) {
@@ -53,31 +51,44 @@ public class MenuController : MonoBehaviour
     public void levelpicking() 
     {
         var active = SceneManager.GetActiveScene();
-
+        // If we're already in a level (not the LevelPicking scene) reload the current level.
+        // Otherwise go to the level picking scene.
         if (active.name == "LevelPicking")
         {
-            SceneFadeManager.Instance.LoadScene("LevelPicking");
+            SceneManager.LoadScene("LevelPicking");
         }
         else
         {
-            SceneFadeManager.Instance.LoadScene(active.buildIndex);
+            SceneManager.LoadScene(active.buildIndex);
         }
     }
-
+    public void loadlevel1()
+    {
+        SceneManager.LoadScene("olivar");
+    }
+    public void loadlevel2()
+    {
+        SceneManager.LoadScene("faith");
+    }
+    public void loadlevel3()
+    {
+        SceneManager.LoadScene("Phillip");
+    }
+    public void loadlevel4()
+    {
+        SceneManager.LoadScene("Valdemar");
+    }
     public void loadlevelMain()
     {
-        SceneFadeManager.Instance.LoadScene("MainWorld");
-        Debug.Log("MainWorld button pressed");
+        SceneManager.LoadScene("MainWorld");
     }
     public void LoadLevel(int buildIndex)
     {
-        SceneFadeManager.Instance.LoadScene(buildIndex);
+        SceneManager.LoadScene(buildIndex);
     }
     public void ReloadScene()
     {
-        SceneFadeManager.Instance.LoadScene(
-            SceneManager.GetActiveScene().buildIndex
-        );
+        LoadLevel(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void PauseGame()
@@ -143,6 +154,6 @@ public class MenuController : MonoBehaviour
     }
     public void QuitGame()
     {
-        SceneFadeManager.Instance.LoadScene("LevelPicking");
+        SceneManager.LoadScene("LevelPicking");
     }
 }
